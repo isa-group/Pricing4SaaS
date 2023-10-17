@@ -1,0 +1,32 @@
+@startuml 04_10_2023
+Pricing *-- Plan 
+
+Plan <-- Feature 
+Plan *-- Attribute
+Plan <-- Change
+
+Attribute <|-- Name
+Attribute <|-- Price
+Attribute <|-- Description
+Attribute <|-- Number_of_Users
+
+Feature <|-- Usage_Limit 
+Feature <|-- Support 
+Feature <|-- Software 
+
+Change <|-- New_Update
+Change <|-- Competitive_Need
+Change <|-- Third_Party_Dependency
+
+Software <|-- Information
+Software <|-- Integration
+Software <|-- Tool
+Software <|-- Automatization
+Software <|-- Management
+
+Usage_Limit <|-- Capacity
+Usage_Limit <|-- Operation
+
+Operation <|-- Request
+Operation <|-- Response_Driven
+@enduml

@@ -1,0 +1,56 @@
+@startuml 13_10_2023
+Pricing *-- Plan 
+
+Plan *-- Feature 
+Plan *-- UsageLimit
+
+Feature <|-- Functional
+Feature <|-- NonFunctional
+
+Feature <|-- FeatureGroup
+FeatureGroup "0..1"*--"1..*" Feature
+
+Functional <|-- Information
+Functional <|-- Integration
+Functional <|-- Tool
+Functional <|-- Automatization
+Functional <|-- Management
+Functional <|-- AddOn
+
+NonFunctional <|-- Guarantee
+NonFunctional <|-- PaymentOption
+NonFunctional <|-- Support
+
+Tool <-- UsageLimit 
+AddOn <-- UsageLimit
+
+UsageLimit <|-- Capacity
+UsageLimit <|-- Request
+UsageLimit <|-- Response_Driven
+UsageLimit <|-- TimeDriven
+UsageLimit <|-- Bucket
+UsageLimit <|-- NumberOfUsers
+
+note "This is a floating note" as N1
+
+Feature "2..*"<-- Bucket : Choices
+note on link: subset of
+Feature "2..*"<-- Bucket : Options
+note on link: subset of
+
+class Bucket{
+NoF: Integer
+}
+
+class Plan{
+Name: String
+Price: Double
+Currency: String
+HasAnualPayment: Boolean
+}
+
+class Feature{
+Name: String
+}
+
+@enduml

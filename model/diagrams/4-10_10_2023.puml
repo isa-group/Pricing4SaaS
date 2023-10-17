@@ -1,0 +1,33 @@
+@startuml 10_10_2023
+Pricing *-- Plan 
+
+Plan *-- Feature 
+Plan *-- Attribute
+
+Attribute <|-- Name
+Attribute <|-- Price
+Attribute <|-- Has_Annual_Payment
+Attribute <|-- Number_of_Users
+
+Feature <|-- Functional
+Feature <|-- Non_functional
+
+Functional <|-- Support
+Functional <|-- Information
+Functional <|-- Integration
+Functional <|-- Tool
+Functional <|-- Automatization
+Functional <|-- Management
+Functional <|-- Add_On
+
+Non_functional <|-- Guarantee
+Non_functional <|-- Payment_option
+
+Tool <|-- Usage_Limit 
+Add_On <|-- Usage_Limit
+
+Usage_Limit <|-- Capacity
+Usage_Limit <|-- Request
+Usage_Limit <|-- Response_Driven
+Usage_Limit <|-- Time_Driven
+@enduml

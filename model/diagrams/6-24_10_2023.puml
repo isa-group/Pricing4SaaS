@@ -51,6 +51,8 @@ Name: String
 class Suscription{
 StartDate: DateTime
 EndDate: DateTime
+--
+getPrice(): Double
 }
 
 @enduml

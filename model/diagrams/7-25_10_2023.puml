@@ -10,8 +10,8 @@ Pricing *-- Plan
 Suscription "0..n"-->"0..1"Plan
 Suscription "0..n"-->"0..n"AddOn
 
-Plan "0..n"<--"1..n" Feature 
-AddOn "0..*"<--"1..n" Feature
+Plan "0..n"-->"1..n" Feature 
+AddOn "0..*"-->"1..n" Feature
 
 Plan "0..n"<--"0..n" AddOn : Available for
 
@@ -21,7 +21,7 @@ Feature <|-- NonFunctional
 Functional <|-- Information
 Functional <|-- Integration
 Functional <|-- Tool
-Functional <|-- Automatization
+Functional <|-- Automation
 Functional <|-- Management
 
 NonFunctional <|-- Guarantee

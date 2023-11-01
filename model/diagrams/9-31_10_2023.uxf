@@ -49,13 +49,16 @@ AutomationType
 --
 BOT
 TRACKING
-TASK_AUTOMATION</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>230</y><w>160</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Enumerate&gt;&gt;
+TASK_AUTOMATION</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>230</y><w>160</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumerate&gt;&gt;
 IntegrationType
 --
-SAAS
-DEVICE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>150</x><y>1010</y><w>140</w><h>70</h></coordinates><panel_attributes>Only set pricingsUrls
+API
+SSO
+WEB_SAAS
+MARKETPLACE
+EXTERNAL_DEVICE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>150</x><y>1010</y><w>140</w><h>70</h></coordinates><panel_attributes>Only set pricingsUrls
 if integrationType is
-SAAS
+WEB_SAAS
 bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>950</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>110</y><w>160</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enumerate&gt;&gt;
 PaymentType
 --
@@ -65,7 +68,7 @@ INVOICE
 OTHER</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>960</x><y>990</y><w>140</w><h>70</h></coordinates><panel_attributes>Its value has to be a
 list of PaymentType 
 enumerates
-bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>920</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>230</y><w>160</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Enumerate&gt;&gt;
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>920</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>230</y><w>160</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enumerate&gt;&gt;
 ValueType
 --
 NUMERIC

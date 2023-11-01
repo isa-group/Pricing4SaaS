@@ -1,42 +1,197 @@
 year: 2023
 features:
+  support:
+    description: "Customer support is available with Jira Service Management’s Standard, Premium, and Enterprise plans. The Free plan has access to self-help resources in the Atlassian Community."
+    valueType: TEXT
+    defaultValue: "Atlassian Community"
+    type: SUPPORT
   storage:
     description: "Confluence and products in the Jira suite all come with their own file storage space, even if you have more than one instance of the same product.\n\nFor example, if you have two Jira Service Management instances from two sites, each has its own storage. This storage is primarily used for attachments."
     valueType: BOOLEAN
     defaultValue: true
-    type: 
-      - TOOL
-      
-  maxVisitsPerMonthAndPet:
-    defaultValue: 1
-    description: maxVisitsPerMonthAndPet description
-    expression: ''
-    type: NUMERIC
-  supportPriority:
-    defaultValue: LOW
-    description: supportPriority description
-    expression: ''
-    type: TEXT
-  haveCalendar:
+    type: TOOL
+  emailNotifications:
+    description: "The type of notifications that someone receives depends on their role and how they’ve interacted with the request. Customers, agents, and administrators get email notifications about activity on requests.\n\nJira Service Management can send a maximum of 100 emails per day on the Free plan. After 100 emails, notifications are paused until the following day."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: AUTOMATION
+    automationType: TRACKING
+  uptimeSLA:
+    description: ""
+    valueType: TEXT
+    defaultValue: "Not Included"
+    type: GUARANTEE
+  automation:
+    description: "Automate any task or process in a few clicks. Set automation rules within a single project, across multiple projects or across all projects on your site to help you scale. Save time and keep your team focussed with Jira’s no-code automation engine.\n\nFree plan comes with 500 rules per month while Standard plan has 5000. Premium has 1000 rules per user per month. For example, 200 users on Premium plan would have 200,000 rules per month for Jira Service Management pooled across users.\n\nThe Enterprise plan allows unlimited rule runs on Jira Service Management.\n\nYou only pay for what you use- only automations that successfully perform an action count towards your limit."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: AUTOMATION
+    automationType: TASK_AUTOMATION
+  emailAndEmbedableWidgetSupport:
+    description: "Let employees or customers submit requests or incidents straight to your queue via email and customize your notifications. Add a widget to your web page so that requestors can get help from whatever page they’re on."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  selfServicePortal:
+    description: "Employees or customers can submit requests or search your knowledge base with an easy-to-use portal."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  forms:
+    description: "Create dynamic, user-friendly forms so your teams can collect the data they need to provide outstanding customer service quickly and competently.\n\nThe new low- to no-code form builder lets teams build and deploy forms that can be used on the portal and requests."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  configurableWorkflows:
+    description: "Configure your request forms and associated workflows with easy-to-use fields that let you drag and drop."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  slaManagement:
+    description: "Meet your SLAs so agents get the important work done first. Configure and get going in minutes."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  reportingAndAnalytics:
+    description: "Choose from a set of default reports, or customize your own to help you track specific team goals, like Time to Resolution or SLA success rates."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: INFORMATION
+  itsmProjectTemplate:
+    description: "The ITSM (information technology service management) template is built for IT teams, DevOps, or any team looking for a service management solution. This includes incident, problem, and change management capabilities.\n\nThis template handles service requests, resolves incidents, approves changes, and fixes problems using ITSM best practices."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  multiLanguageSupport:
+    description: "Meet your customer’s language preferences or requirements by adding any of our 24 supported languages to your service projects."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: GUARANTEE
+    docURL: https://support.atlassian.com/jira-service-management-cloud/docs/provide-help-in-multiple-languages/
+  appsAndIntegrations:
+    description: "Rich APIs and 1,000 Marketplace apps let your IT team choose how they want to work."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: INTEGRATION
+    integrationType: MARKETPLACE
+  mobileAppSupport:
+    description: "Get notified instantly on breached SLAs and requests that are assigned, reported, watched, and mentioned with @."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: AUTOMATION
+    automationType: TRACKING
+  chat:
+    description: "Create a 2-way sync between your Jira Service Management issues and conversations in Slack or Microsoft Teams."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: INTEGRATION
+    integrationType: WEB_SAAS
+    pricingUrls:
+      - https://slack.com/intl/es-es/pricing
+      - https://www.microsoft.com/en/microsoft-teams/compare-microsoft-teams-options
+  customDomains:
+    description: "Use a company-branded URL for JSM Help Centers."
+    valueType: BOOLEAN
     defaultValue: false
-    description: haveCalendar description
-    expression: planContext['haveCalendar']
-    type: CONDITION
-  havePetsDashboard:
+    type: MANAGEMENT
+  virtualAgent:
+    description: "The virtual agent automates Tier 1 support interactions in Slack (Microsoft Teams coming soon), and uses artificial intelligence to generate responses to service requests using your existing knowledge base.\n\nPremium and Enterprise customers can use up to 1000 assisted conversations per month per site. Assisted conversations are defined as an interaction where the virtual agent correctly recognizes the help-seeker’s intent, and the help-seeker confirms that intent has been recognized."
+    valueType: BOOLEAN
     defaultValue: false
-    description: havePetsDashboard description
-    expression: planContext['havePetsDashboard']
-    type: CONDITION
-  haveVetSelection:
+    type: AUTOMATION
+    automationType: BOT
+  alertNotificationsPerMonth:
+    description: "Route every alert to the correct team or person and help ensure your team doesn’t miss critical alerts. When an incident is raised, people and teams can be added to the incident as responders so they can work to resolve it.\n\nLink alerts to incidents, or add and alert multiple responders to one incident. When alerts are enabled and a responder is added to an incident, the responder will be alerted according to their alert notification preferences and the priority of the alert.\n\nThe Free plan is limited to 200 SMSs per month account-wide: 100 to the United States and Canada, 100 to other destinations.\n\nPremium and Enterprise plans include:\n\nAutomated Opsgenie actions\nAdvanced alert enrichment\nAdvanced alert customization\nCustom alert actions\nAlert and notification policies\nMultiple notification rules per contact type\nAttachments and notes in alerts"
+    valueType: TEXT
+    defaultValue: "Unlimited alerts, unlimited alert email notifications, and 200 SMS"
+    type: AUTOMATION
+    automationType: TRACKING
+  incidentCreation:
+    description: "Using templates, incident responders are automatically notified as soon as the incident occurs."
+    valueType: TEXT
+    defaultValue: "Manual"
+    type: TOOL
+  internalStakeholders:
+    description: "Send internal communications about ongoing incidents to licensed stakeholders in your organization."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  monitoringAndChatOpsIntegrations:
+    description: "Send internal communications about ongoing incidents to licensed stakeholders in your organization."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: INTEGRATION
+    integrationType: API
+  majorIncidentEscalation:
+    description: "Use an incident management process to identify affected services, track related issues, and escalate to the correct team."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  postIncidentReviews:
+    description: "Understand all contributing root causes, and document the incident for future reference and pattern discovery. Post-incident reviews also let you enact preventative actions to reduce the likelihood or impact of recurrence."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  onCallManagement:
+    description: "Create routing rules, escalation policies, and on-call schedules to manage who is notified of alerts.\n\nPremium and Enterprise plans include:\n\nMultiple routing rules per team\nAdvanced escalation steps (like notifying next user in schedule)"
+    valueType: BOOLEAN
     defaultValue: false
-    description: haveVetSelection description
-    expression: planContext['haveVetSelection']
-    type: CONDITION
-  haveOnlineConsultation:
+    type: MANAGEMENT
+  advancedAlterIntegrations:
+    description: "Connect more than 200 third-party tools to Jira Service Management with:\n\nGlobal integrations that let you route alerts to different teams \nOutbound integrations like outgoing webhooks to send alerts to another tool or endpoint\nBi-directional integrations that sync back and forth \nAlerts from integrations via filters in the advanced view"
+    valueType: BOOLEAN
     defaultValue: false
-    description: haveOnlineConsultation description
-    expression: planContext['haveOnlineConsultation']
-    type: CONDITION
+    type: INTEGRATION
+    integrationType: MARKETPLACE
+  incidentConferenceCalls:
+    description: "Command, control, and coordinate incident response, and effectively collaborate through video bridge and other integrated communication tools."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: TOOL
+  incidentInvestigation:
+    description: "See all deployments and commits leading up to an incident. Get insights into code changes."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: INFORMATION
+  heartbeatMonitoring:
+    description: "Ensure that alerting works end to end through passive monitoring of the systems forwarding alerts to Jira Service Management. JSM notifies you of any communication gaps with your system after specified time intervals."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: AUTOMATION
+    automationType: TRACKING
+  serviceRegistry:
+    description: "IT teams can register all the services they operate, providing additional context for any changes. Link issues to affected services, and streamline incidents when they occur."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: TOOL
+  serviceStatusPages:
+    description: "Opsgenie provides service-level status pages for stakeholders to view information about the status of incidents and progress of resolution."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: TOOL
+  serviceDependency:
+    description: "Define the dependency or containment relationship to track the correlation status between services."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: TOOL
+  serviceSuscriptions:
+    description: "Opt into the incident communications of relevant services."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: AUTOMATION
+    automationType: TRACKING
+  externalServices:
+    description: "Connect to the external services that you depend on in a status page to know the moment an incident is reported and set alerting rules to respond to it quickly."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: INTEGRATION
+    integrationType: API
+  serviceAndInfrastructureHealthAnalysis:
+    description: "Health analysis gives you a top-level view of all services. This helps you identify problems or improvements within those services."
+    valueType: BOOLEAN
+    defaultValue: false
+    type: INFORMATION
+  # Vamos por CHANGE MANAGEMENT
 usageLimits:
   agentLimitPerSite:
     defaultValue: 2

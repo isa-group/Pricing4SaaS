@@ -1,0 +1,106 @@
+year: 2023
+features:
+  storage:
+    description: "Confluence and products in the Jira suite all come with their own file storage space, even if you have more than one instance of the same product.\n\nFor example, if you have two Jira Service Management instances from two sites, each has its own storage. This storage is primarily used for attachments."
+    valueType: BOOLEAN
+    defaultValue: true
+    type: 
+      - TOOL
+      
+  maxVisitsPerMonthAndPet:
+    defaultValue: 1
+    description: maxVisitsPerMonthAndPet description
+    expression: ''
+    type: NUMERIC
+  supportPriority:
+    defaultValue: LOW
+    description: supportPriority description
+    expression: ''
+    type: TEXT
+  haveCalendar:
+    defaultValue: false
+    description: haveCalendar description
+    expression: planContext['haveCalendar']
+    type: CONDITION
+  havePetsDashboard:
+    defaultValue: false
+    description: havePetsDashboard description
+    expression: planContext['havePetsDashboard']
+    type: CONDITION
+  haveVetSelection:
+    defaultValue: false
+    description: haveVetSelection description
+    expression: planContext['haveVetSelection']
+    type: CONDITION
+  haveOnlineConsultation:
+    defaultValue: false
+    description: haveOnlineConsultation description
+    expression: planContext['haveOnlineConsultation']
+    type: CONDITION
+usageLimits:
+  agentLimitPerSite:
+    defaultValue: 2
+    description: This is the maximum number of agents or agent licenses you can add to each of your Jira Service Management sites. Agents are licensed users who work on customer requests and add customers to the service project. Agents are added to the Service Desk Team role in your service project.
+    valueAllowedTypes:
+      - TEXT
+      - BOOLEAN
+    expression: ''
+    serverExpression: ''
+plans:
+  BASIC:
+    currency: EUR
+    description: Basic plan
+    features:
+      maxPets:
+        value: 2
+      maxVisitsPerMonthAndPet:
+        value: 1
+      supportPriority:
+        value: LOW
+      haveCalendar:
+        value: false
+      havePetsDashboard:
+        value: false
+      haveVetSelection:
+        value: false
+      haveOnlineConsultation:
+        value: false
+    price: 0.0
+  ADVANCED:
+    currency: EUR
+    description: Advanced plan
+    features:
+      maxPets:
+        value: 4
+      maxVisitsPerMonthAndPet:
+        value: 3
+      supportPriority:
+        value: MEDIUM
+      haveCalendar:
+        value: true
+      havePetsDashboard:
+        value: false
+      haveVetSelection:
+        value: true
+      haveOnlineConsultation:
+        value: false
+    price: 5.0
+  PRO:
+    currency: EUR
+    description: Pro plan
+    features:
+      maxPets:
+        value: 7
+      maxVisitsPerMonthAndPet:
+        value: 6
+      supportPriority:
+        value: HIGH
+      haveCalendar:
+        value: true
+      havePetsDashboard:
+        value: true
+      haveVetSelection:
+        value: true
+      haveOnlineConsultation:
+        value: true
+    price: 12.0

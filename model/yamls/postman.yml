@@ -187,7 +187,8 @@ features:
   paymentOptions:
     description: "https://learning.postman.com/docs/billing/billing/"
     valueType: TEXT
-    defaultValue: "Credit card only"
+    defaultValue: 
+      - CREDIT_CARD
     type: PAYMENT
   integrationWithCiCdTools:
     description: ""
@@ -374,7 +375,11 @@ plans:
       support:
         value: "Priority Email (SLA: 1 business day)"
       paymentOptions:
-        value: "Credit card, ACH, wire transfer & invoicing/PO"
+        value: 
+          - CREDIT_CARD
+          - ACH
+          - WIRE_TRANSFER
+          - INVOICE
     usageLimits:
       callsToPostmanApi:
         value: 1000000
@@ -441,7 +446,11 @@ plans:
       customerSuccess:
         value: true
       paymentOptions:
-        value: "Credit card, ACH, wire transfer & invoicing/PO"
+        value:
+          - CREDIT_CARD
+          - ACH
+          - WIRE_TRANSFER
+          - INVOICE
     usageLimits:
       callsToPostmanApi:
         value: 1000000

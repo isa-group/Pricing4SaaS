@@ -1,5 +1,5 @@
-saasName: Jira 
-day: 2
+saasName: Postman 
+day: 5
 month: 11
 year: 2023
 currency: USD
@@ -455,15 +455,13 @@ usageLimits:
 plans:
   FREE:
     description: ""
-    monthlyPrice: 0.0
-    annualPrice: 0.0
+    price: 0.0
     unit: agent/month
     features: null
     usageLimits: null
   STANDARD:
     description: ""
-    monthlyPrice: 22.05
-    annualPrice: 18.06
+    price: 22.05
     unit: agent/month
     features:
       support:
@@ -495,8 +493,7 @@ plans:
         value: .inf
   PREMIUM:
     description: ""
-    monthlyPrice: 49.35
-    annualPrice: 41.67
+    price: 49.35
     unit: agent/month
     features:
       support:
@@ -571,8 +568,7 @@ plans:
         value: .inf
   ENTERPRISE:
     description: ""
-    monthlyPrice: null
-    annualPrice: 59.70
+    price: 49.35
     unit: agent/month
     features:
       support:

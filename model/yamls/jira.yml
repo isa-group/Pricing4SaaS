@@ -14,7 +14,7 @@ features:
     description: "Confluence and products in the Jira suite all come with their own file storage space, even if you have more than one instance of the same product.\n\nFor example, if you have two Jira Service Management instances from two sites, each has its own storage. This storage is primarily used for attachments."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   emailNotifications:
     description: "The type of notifications that someone receives depends on their role and how they’ve interacted with the request. Customers, agents, and administrators get email notifications about activity on requests.\n\nJira Service Management can send a maximum of 100 emails per day on the Free plan. After 100 emails, notifications are paused until the following day."
     valueType: BOOLEAN
@@ -36,27 +36,27 @@ features:
     description: "Let employees or customers submit requests or incidents straight to your queue via email and customize your notifications. Add a widget to your web page so that requestors can get help from whatever page they’re on."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   selfServicePortal:
     description: "Employees or customers can submit requests or search your knowledge base with an easy-to-use portal."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   forms:
     description: "Create dynamic, user-friendly forms so your teams can collect the data they need to provide outstanding customer service quickly and competently.\n\nThe new low- to no-code form builder lets teams build and deploy forms that can be used on the portal and requests."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   configurableWorkflows:
     description: "Configure your request forms and associated workflows with easy-to-use fields that let you drag and drop."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   slaManagement:
     description: "Meet your SLAs so agents get the important work done first. Configure and get going in minutes."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   reportingAndAnalytics:
     description: "Choose from a set of default reports, or customize your own to help you track specific team goals, like Time to Resolution or SLA success rates."
     valueType: BOOLEAN
@@ -66,7 +66,7 @@ features:
     description: "The ITSM (information technology service management) template is built for IT teams, DevOps, or any team looking for a service management solution. This includes incident, problem, and change management capabilities.\n\nThis template handles service requests, resolves incidents, approves changes, and fixes problems using ITSM best practices."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   multiLanguageSupport:
     description: "Meet your customer’s language preferences or requirements by adding any of our 24 supported languages to your service projects."
     valueType: BOOLEAN
@@ -115,12 +115,12 @@ features:
     description: "Using templates, incident responders are automatically notified as soon as the incident occurs."
     valueType: TEXT
     defaultValue: "Manual"
-    type: TOOL
+    type: DOMAIN
   internalStakeholders:
     description: "Send internal communications about ongoing incidents to licensed stakeholders in your organization."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   monitoringAndChatOpsIntegrations:
     description: "Send internal communications about ongoing incidents to licensed stakeholders in your organization."
     valueType: BOOLEAN
@@ -131,12 +131,12 @@ features:
     description: "Use an incident management process to identify affected services, track related issues, and escalate to the correct team."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   postIncidentReviews:
     description: "Understand all contributing root causes, and document the incident for future reference and pattern discovery. Post-incident reviews also let you enact preventative actions to reduce the likelihood or impact of recurrence."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   onCallManagement:
     description: "Create routing rules, escalation policies, and on-call schedules to manage who is notified of alerts.\n\nPremium and Enterprise plans include:\n\nMultiple routing rules per team\nAdvanced escalation steps (like notifying next user in schedule)"
     valueType: BOOLEAN
@@ -152,7 +152,7 @@ features:
     description: "Command, control, and coordinate incident response, and effectively collaborate through video bridge and other integrated communication tools."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   incidentInvestigation:
     description: "See all deployments and commits leading up to an incident. Get insights into code changes."
     valueType: BOOLEAN
@@ -168,17 +168,17 @@ features:
     description: "IT teams can register all the services they operate, providing additional context for any changes. Link issues to affected services, and streamline incidents when they occur."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   serviceStatusPages:
     description: "Opsgenie provides service-level status pages for stakeholders to view information about the status of incidents and progress of resolution."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   serviceDependency:
     description: "Define the dependency or containment relationship to track the correlation status between services."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   serviceSubscriptions:
     description: "Opt into the incident communications of relevant services."
     valueType: BOOLEAN
@@ -200,7 +200,7 @@ features:
     description: "Configure approval workflows based on type of change, associated risk, or procedures set by your change advisory board."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   changeRiskAssessmentEngine:
     description: "Score the risk of a change using a Jira automation-powered risk assessment engine."
     valueType: BOOLEAN
@@ -211,7 +211,7 @@ features:
     description: "Visualize and schedule changes happening across your organization to provide visibility and avoid conflicts."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   deploymentTracking:
     description: "Set up deployment tracking for your service project to create change requests when your team initiates deployments to selected services."
     valueType: BOOLEAN
@@ -229,12 +229,12 @@ features:
     description: "Track and manage the ownership and lifecycle of any asset or service for inventory purposes, auditing, and more. Gain visibility into dependencies, quickly troubleshoot incidents, and minimize the risk of changes."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   assetDiscovery:
     description: "Scan your network to discover and populate your asset and service repository. Detect infrastructure changes, identify shadow IT assets, and improve support.\n\nThe Assets Discovery Marketplace app is required but is free for Premium and Enterprise plans. The collected data is imported into Assets in Jira Service Management."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   dependencyMapping:
     description: "View the dependencies between configuration items or assets and services to assess the risk of changes, resolve incidents, and uncover the root cause of problems."
     valueType: BOOLEAN
@@ -244,42 +244,42 @@ features:
     description: "Dynamic and efficient form submission enables requestors and agents to select assets or services directly from request fields in Jira Service Management, giving your agents the context they need to resolve an issue or request quickly."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   hrServiceManagementTemplate:
     description: "This template is designed for HR teams who need a central place to manage staff and requests. The HR service management template also handles onboarding and offboarding, answers questions, and facilitates change requests for your staff."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   facilitiesServiceManagementTemplate:
     description: "The facilities service management template is for teams who need to track work and manage employee requests. This template also manages requests for maintenance, moving, and event planning."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   legalServiceManagementTemplate:
     description: "Designed for legal teams looking for a clear and central way to track and manage their work. This template creates, tracks, and manages your contracts through the review cycle to resolution."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   generalServiceManagementTemplate:
     description: "Best suited for teams looking to efficiently manage general support requests. This template handles all your service requests in one location and helps your employees get the answers they need."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   customenServiceManagementTemplate:
     description: "Best suited for external-facing teams needing a branded support experience."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   customerProfilesAndFields:
     description: "Access all relevant information about the customer in one place. Add detail fields to customers and use them to customize queues and SLAs."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   organizationProfilesAndFields:
     description: "Access all relevant information about the organization in one place. Add detail fields to organizations and use them to customize queues and SLAs."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   externalCustomerSSO:
     description: "SSO (single sign-on) for external accounts lets your customers get help in Jira Service Management without having to log in. "
     valueType: TEXT
@@ -290,7 +290,7 @@ features:
     description: "Create, read, update, and delete knowledge articles directly within Jira Service Management."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   knowledgeBaseReports:
     description: "Knowledge base article reports show how often an article is shared, viewed, and voted as helpful. There are two default reports that provide information on how your knowledge base articles are performing: Requests deflected and Requests resolved."
     valueType: BOOLEAN
@@ -300,12 +300,12 @@ features:
     description: "Set up article suggestions that can help your customers as they fill in a request form. Use labels to limit which articles are shown in each form."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   featuredArticles:
     description: "Help customers self-serve by featuring relevant articles at the top of each help center category. This is especially useful to highlight articles that are commonly used by customers."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   atlassianAnalytics:
     description: "Build interactive, customizable charts, and dashboards across products and instances with a low- to no-code editor."
     valueType: BOOLEAN
@@ -320,7 +320,7 @@ features:
     description: "Query your preferred non-Atlassian data sources and visualize alongside Atlassian data for holistic insights."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   atlassianAccess:
     description: "Atlassian Access helps you proactively defend against unauthorized access and risky behavior with centralized IAM controls. With an Access subscription, you can address your cloud identity requirements with enterprise-grade security features, including:\n\nEnforced Single Sign-on (SSO) and two-factor authentication\nAutomated user lifecycle management (SCIM provisioning)\nAccess policies for secure collaboration with external users\nSeamless integration with your Identity provider (IdP)"
     valueType: TEXT
@@ -355,7 +355,7 @@ features:
     description: "Enforce security controls on mobile app usage through built-in Mobile Device Management (MDM) support for iOS and Android."
     valueType: BOOLEAN
     defaultValue: true
-    type: TOOL
+    type: DOMAIN
   auditLogs:
     description: "Audit logs let administrators look at changes made to your site. This is useful when you need to troubleshoot a problem or keep a record of important events, like changes to global permissions."
     valueType: BOOLEAN
@@ -380,12 +380,12 @@ features:
     description: "Test and control the rollout of updates and new apps in a sandbox copy of your environment before rolling it out companywide. Apply your existing change management practices, ensure compatibility with your ecosystem, and prepare end users if necessary."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   releaseTracks:
     description: "Control when and how changes are released to end users with Release Tracks.\n\nWith options to control Atlassian cloud releases, your day-to-day management of our cloud products becomes more predictable, helping you plan, prepare, and ensure success for upcoming product changes."
     valueType: BOOLEAN
     defaultValue: false
-    type: TOOL
+    type: DOMAIN
   multipleIdp:
     description: "Support multiple identity providers for a single organization.\n\nCustomers can now connect multiple identity providers to implement SAML SSO and SCIM user provisioning to their Atlassian Cloud organization."
     valueType: BOOLEAN

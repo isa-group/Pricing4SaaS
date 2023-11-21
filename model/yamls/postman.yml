@@ -216,7 +216,7 @@ usageLimits:
     description: ""
     valueType: NUMERIC
     defaultValue: 10000
-    unit: calls/month
+    unit: call/month
     type: QUOTA
     linkedFeature: postmanApi
   numberOfIntegrations:
@@ -515,8 +515,6 @@ addOns:
     usageLimitsExtensions:
       monitoringCallsLimit:
         value: 1000
-        expirationTime: null
-        timeUnit: null
   monitoringMonthly:
     availableFor: 
       - BASIC

@@ -1,0 +1,165 @@
+saasName: canva
+day: 25
+month: 11
+year: 2023
+currency: EUR
+hasAnnualPayment: true
+features:
+  assets1:
+    description: "Free stock photos, graphics, videos and audio"
+    valueType: TEXT
+    defaultValue: 1+ million
+    type: DOMAIN
+  freeFonts:
+    description: ""
+    valueType: TEXT
+    defaultValue: 1,000+
+    type: DOMAIN
+  assets2:
+    description: "Fre templates, logos & 100+ design types (Social Media Posts, Presentations, Letters, Posters)"
+    valueType: TEXT
+    defaultValue: 8,000+
+    type: DOMAIN
+  customDimensionDesigns:
+    description: Create designs with custom dimensions
+    valueType: BOOLEAN
+    defaultValue: true
+    type: DOMAIN
+  export1:
+    description: Export designs as PDF, JPG, PNG
+    valueType: BOOLEAN
+    defaultValue: true
+    type: DOMAIN
+  export2:
+    description: Export designs print ready designs / as CMYK
+    valueType: BOOLEAN
+    defaultValue: false
+    type: DOMAIN
+  socialSharing&PresentationMode:
+    description: Built-in social sharing & presentation mode
+    valueType: BOOLEAN
+    defaultValue: true
+    type: DOMAIN
+  customTemplates:
+    description: Custom templates
+    valueType: BOOLEAN
+    defaultValue: false
+    type: DOMAIN
+  saveDesingsAsTemplates:
+    description: Save designs as templates (incluede template locking)
+    valueType: BOOLEAN
+    defaultValue: false
+    type: DOMAIN
+  premiumAssets:
+    description: Premium templates, Animations, Fonts, Videos
+    valueType: BOOLEAN
+    defaultValue: false
+    type: DOMAIN
+  mediaTagging:
+    description: Media tagging
+    valueType: BOOLEAN
+    defaultValue: false
+    type: DOMAIN
+  backgroundRemover:
+    description: Background remover
+    value: BOOLEAN
+    defaultValue: false
+    type: DOMAIN
+  contentPlannerPlusFeatures:
+    description: More features in Content Planner
+    value: BOOLEAN
+    defaultValue: false
+    type: DOMAIN
+  insightsPlus:
+    description: More Design Insights (Social Media + Sites)
+    value: BOOLEAN
+    defaultValue: false
+    type: INFORMATION
+  magicMediaText2Image:
+    description: Magic media Text to image
+    value: TEXT
+    defaultValue: 50 total uses
+    type: AUTOMATION
+    automationType: BOT
+usageLimits:
+  githubActionsQuota:
+    description: ""
+    valueType: NUMERIC
+    defaultValue: 1000
+    unit: minute/month
+    linkedFeature: githubActions
+plans:
+  FREE:
+    description: For anyone to design anything, on their own or with family, friends, or others. No experience required.
+    monthlyPrice: 0
+    annualPrice: 0
+    unit: user/month
+    features: null
+    usageLimits: null
+  PRO:
+    description: For individuals, solopreneurs and freelance designers who want unlimited access to premium content, to create professional designs with ease and scale their productivity.
+    monthlyPrice: 11.99
+    annualPrice: 109.99
+    unit: user/month
+    features:
+      assets1:
+        value: 4+ million
+      freeFonts:
+        value: 1,000+ or upload your own
+      assets2:
+        value: 60,000+
+      export2:
+        value: true
+      socialSharing&PresentationMode:
+        value: true
+      customTemplates:
+        value: true
+      saveDesingsAsTemplates:
+        value: true
+      premiumAssets:
+        value: true
+      mediaTagging:
+        value: true
+      backgroundRemover:
+        value: true
+      contentPlannerPlusFeatures:
+        value: true
+      insightsPlus:
+        value: true
+      magicMediaText2Image:
+        value: 500 users per month
+    usageLimits:
+      githubActionsQuota:
+        value: 3000
+  TEAMS:
+    description: All the great features of Canva Pro, plus we think you'll love these features designed to allow teams of all sizes to collaborate with ease.
+    monthlyPrice: 23.00
+    annualPrice: 240
+    unit: user/month
+    features:
+      assets1:
+        value: 4+ million
+      freeFonts:
+        value: 1,000+ or upload your own
+      assets2:
+        value: 80,000+
+      export2:
+        value: true
+      socialSharing&PresentationMode:
+        value: true
+      customTemplates:
+        value: true
+      saveDesingsAsTemplates:
+        value: true
+      premiumAssets:
+        value: true
+      mediaTagging:
+        value: true
+      backgroundRemover:
+        value: true
+      contentPlannerPlusFeatures:
+        value: true
+      insightsPlus:
+        value: true
+      magicMediaText2Image:
+        value: 500 uses per month, per person

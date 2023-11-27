@@ -364,13 +364,13 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: AUTOMATION
-    integrationType: FILTERING
+    automationType: FILTERING
   copilotEditorPlugin:
     description: ""
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    automationType: EXTENSION
+    integrationType: EXTENSION
   copilotMultilineFunctionSuggestions:
     description: ""
     valueType: BOOLEAN

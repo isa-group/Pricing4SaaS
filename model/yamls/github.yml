@@ -23,7 +23,7 @@ features:
   githubActions:
     description: Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub. Minutes are free for public repositories.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: AUTOMATION
     automationType: TASK_AUTOMATION
   githubPackages:
@@ -37,67 +37,67 @@ features:
     defaultValue: true
     type: DOMAIN
   pullRequests:
-    description: Allow contributors to easily notify you of changes they've pushed to a repository – with access limited to the contributors you specify. Easily merge changes you accept.
+    description: Allow contributors to easily notify you of changes they've pushed to a repository with access limited to the contributors you specify. Easily merge changes you accept.
     valueType: BOOLEAN
     defaultValue: true
     type: DOMAIN
   protectedBranches:
     description: Enforce restrictions on how code branches are merged, including requiring reviews by selected collaborators, or allowing only specific contributors to work on a particular branch.
     valueType: BOOLEAN
-    defaultValue: false
-    type: DOMAIN
+    defaultValue: true
+    type: MANAGEMENT
   codeOwners:
     description: Automatically request reviews or require approval by selected contributors when changes are made to sections of code that they own.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: AUTOMATION
     automationType: TRACKING
   draftPullRequests:
     description: Easily discuss and collaborate on pull requests before submitting to formal review.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: DOMAIN
   multiplePullRequestsAssignees:
     description: Assign more than one person to a pull request.
     valueType: BOOLEAN
-    defaultValue: false
-    type: DOMAIN
+    defaultValue: true
+    type: MANAGEMENT
   repositoryInsights:
     description: See data about activity and contributions within your repositories, including trends. You can use this data to improve collaboration and make development faster and more effective.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: INFORMATION
   scheduledReminders:
     description: Send scheduled messages to you or your team listing open pull requests.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: AUTOMATION
     automationType: TASK_AUTOMATION
   automaticCodeReviewAssigment:
     description: Automatically assign code reviews to members of your team based on one of two algorithms.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: AUTOMATION
     automationType: TASK_AUTOMATION
   enviromentProtectionRules:
     description: When a workflow job references an environment, the job won't start until all of the environment's protection rules pass.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: MANAGEMENT
   enviromentDeploymentBranchesAndSecrets:
     description: A job cannot access secrets that are defined in an environment unless it is running on the specified branch.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: MANAGEMENT
   collaboratorsForPublicRepositories:
     description: Invite any GitHub member, or all GitHub members, to work with you on code in a public repository you control including making changes and opening issues.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: MANAGEMENT
   collaboratorsForPrivateRepositories:
     description: Invite any GitHub member, or all GitHub members, to work with you on code in a private repository you control including making changes and opening issues.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: MANAGEMENT
   issues:
     description: Track bugs, enhancements, and other requests, prioritize work, and communicate with stakeholders as changes are proposed and merged.
@@ -127,29 +127,29 @@ features:
   pagesAndWikis:
    description: Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.
    valueType: BOOLEAN
-   defaultValue: false
+   defaultValue: true
    type: DOMAIN
   multipleIssueAssignees:
     description: Assign more than one person to an issue.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: MANAGEMENT
   codeScanning:
     description: Integrate automated security review into your pull requests with CodeQL. Find, prioritize, and fix vulnerabilities in your repositories without disrupting your workflow.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: AUTOMATION
-    automationType: TASK_AUTOMATION
+    automationType: TRACKING
   secretScanning:
     description: Detect credentials exposed in your git history, comments, or discussions. Prevent further exposures with push protection, which proactively blocks secrets from being pushed into your code.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: AUTOMATION
-    automationType: TASK_AUTOMATION
+    automationType: TRACKING
   dependencyReview:
     description: Understand the security impact of newly introduced dependencies during pull requests, before they get merged.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: INFORMATION
   securityOverview:
     description: Get a centralized view of your organization's security risks. Know where security features have and haven’t yet been configured.
@@ -161,19 +161,19 @@ features:
     valueType: BOOLEAN
     defaultValue: true
     type: AUTOMATION
-    automationType: BOT
+    automationType: TRACKING
   dependabotSecurityUpdates:
     description: Keep projects secure by automatically opening pull requests that update vulnerable dependencies to secure versions.
     valueType: BOOLEAN
     defaultValue: true
     type: AUTOMATION
-    automationType: BOT
+    automationType: TASK_AUTOMATION
   dependabotVersionUpdates:
     description: Keep projects up-to-date by automatically opening pull requests that update out-of-date dependencies.
     valueType: BOOLEAN
     defaultValue: true
     type: AUTOMATION
-    automationType: BOT
+    automationType: TASK_AUTOMATION
   repositoryRules:
     description: Enforce branch and tag protections across repositories. Rule insights allow you to review rule enforcement and understand its impact.
     valueType: BOOLEAN
@@ -182,17 +182,17 @@ features:
   requiredReviews:
     description: Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: MANAGEMENT
   requiredStatusChecks:
     description: Ensure that all required CI tests are passing before collaborators can make changes to a protected branch.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: MANAGEMENT
   githubSecurityAdvisories:
     description: Privately discuss, fix, and publish information about security vulnerabilities found in your repository.
     valueType: BOOLEAN
-    defaultValue: false
+    defaultValue: true
     type: DOMAIN
   roleBasedAccessControl:
     description: Define users' level of access to your code, data and settings.
@@ -249,12 +249,13 @@ features:
     description: Define tests that GitHub automatically runs against code being committed to your repository, and get details about failures and what is causing them.
     valueType: BOOLEAN
     defaultValue: true
-    type: DOMAIN
+    type: INFORMATION
   preReceiveHooks:
     description: Create requirements for automatically accepting or rejecting a push based on the contents of the push.
     valueType: BOOLEAN
     defaultValue: false
-    type: DOMAIN
+    type: AUTOMATION
+    automationType: TASK_AUTOMATION
   communitySupport:
     description: Get help with most of your GitHub questions and issues in our Community Forum.
     valueType: BOOLEAN
@@ -272,8 +273,9 @@ features:
     type: SUPPORT
   invoiceBilling:
     description: Pay bills via invoice, rather than using your credit card.
-    valueType: BOOLEAN
-    defaultValue: false
+    valueType: TEXT
+    defaultValue:
+      - CARD
     type: PAYMENT
   selfHostedDeployment:
     description: Self-hosted GitHub for on-prem appliances or self-managed cloud tenants.
@@ -402,48 +404,89 @@ features:
     type: INTEGRATION
     integrationType: EXTERNAL_DEVICE
 usageLimits:
+  githubOnlyForPublicRepositoriesFreeTier:
+    description: 'Free tier usage limit for public repositories'
+    valueType: BOOLEAN
+    defaultValue: false
+    linkedFeatures:
+      - protectedBranches
+      - codeOwners
+      - draftPullRequests
+      - multiplePullRequestsAssignees
+      - repositoryInsights
+      - scheduledReminders
+      - automaticCodeReviewAssigment
+      - enviromentProtectionRules
+      - enviromentDeploymentBranchesAndSecrets
+      - pagesAndWikis
+      - multipleIssueAssignees
+      - codeScanning
+      - secretScanning
+      - dependencyReview
+      - requiredReviews
+      - requiredStatusChecks
+      - githubSecurityAdvisories
+  githubOnlyForPublicRepositoriesTeamTier:
+    description: 'Team tear usage limit for public repositories'
+    valueType: BOOLEAN
+    defaultValue: false
+    linkedFeatures:
+      - enviromentProtectionRules
+      - codeScanning
+      - secretScanning
+      - dependencyReview
+      - requiredReviews
+      - requiredStatusChecks
+      - githubSecurityAdvisories
   githubActionsQuota:
     description: ""
     valueType: NUMERIC
     defaultValue: 1000
     unit: minute/month
-    linkedFeature: githubActions
+    linkedFeatures: 
+      - githubActions
   diskSpaceForGithubPackages:
     description: ""
     valueType: NUMERIC
     defaultValue: 0.5
     unit: GB
-    linkedFeature: githubPackages
+    linkedFeatures: 
+      - githubPackages
   githubCodepacesStorage:
     description: "Free storage included in personal accounts like Free and Pro"
     valueType: NUMERIC
     defaultValue: 15
     unit: GB/month
-    linkedFeature: githubCodespaces
+    linkedFeatures: 
+      - githubCodespaces
   githubCodepacesCoreHours:
     description: "Free storage included in personal accounts like Free and Pro"
     valueType: NUMERIC
     defaultValue: 120
-    unit: hour/month
-    linkedFeature: githubCodespaces
+    unit: coreHours/month
+    linkedFeatures:
+      - githubCodespaces
   gitLFSMaximunFileSize:
     description: ""
     valueType: NUMERIC
     defaultValue: 2
     unit: GB
-    linkedFeature: gitLFS
+    linkedFeatures:
+      - gitLFS
   gitLFSStorageLimit:
     description: ""
     valueType: NUMERIC
     defaultValue: 1
     unit: GB
-    linkedFeature: gitLFS
+    linkedFeature:
+      - gitLFS
   gitLFSBandwithLimit:
     description: ""
     valueType: NUMERIC
     defaultValue: 1
     unit: GB
-    linkedFeature: gitLFS
+    linkedFeature:
+      - gitLFS
 plans:
   FREE:
     description: "The basics for individuals and organizations"
@@ -462,33 +505,11 @@ plans:
     features:
       githubCodespaces:
         value: true
-      protectedBranches:
-        value: true
-      codeOwners:
-        value: true
-      draftPullRequests:
-        value: true
-      multiplePullRequestsAssignees:
-        value: true
-      repositoryInsights:
-        value: true
-      scheduledReminders:
-        value: true
-      automaticCodeReviewAssigment:
-        value: true
-      enviromentDeploymentBranchesAndSecrets:
-        value: true
-      pagesAndWikis:
-        value: true
-      multipleIssueAssignees:
-        value: true
-      requiredReviews:
-        value: true
-      requiredStatusChecks:
-        value: true
       standardSupport:
         value: true
     usageLimits:
+      githubOnlyForPublicRepositoriesFreeTier:
+        value: true
       githubActionsQuota:
         value: 3000
       diskSpaceForGithubPackages:
@@ -505,43 +526,13 @@ plans:
     annualPrice: 252
     unit: user/month
     features:
-      protectedBranches:
-        value: true
       codeOwners:
         value: true
       draftPullRequests:
         value: true
-      multiplePullRequestsAssignees:
-        value: true
-      repositoryInsights:
-        value: true
-      scheduledReminders:
-        value: true
-      automaticCodeReviewAssigment:
-        value: true
-      enviromentProtectionRules:
-        value: true
-      enviromentDeploymentBranchesAndSecrets:
-        value: true
-      pagesAndWikis:
-        value: true
-      multipleIssueAssignees:
-        value: true
-      codeScanning:
-        value: true
-      secretScanning:
-        value: true
-      dependencyReview:
-        value: true
       securityOverview:
         value: true
       repositoryRules:
-        value: true
-      requiredReviews:
-        value: true
-      requiredStatusChecks:
-        value: true
-      githubSecurityAdvisories:
         value: true
       auditLogAPI:
         value: true
@@ -560,10 +551,14 @@ plans:
       premiumAndPremiumPlusSupport:
         value: true
       invoiceBilling:
-        value: true
+        value:
+          - CARD
+          - INVOICE
       selfHostedDeployment:
         value: true
     usageLimits:
+      githubOnlyForPublicRepositoriesTeamTier:
+        value: true
       githubActionsQuota:
         value: 50000
       diskSpaceForGithubPackages:
@@ -641,8 +636,6 @@ addOns:
         value: true
       copilotEnterpriseGradeSecuritySafetyAndPrivacy:
         value: true
-      copilotTelemetry:
-        value: false
       copilotBlocksSuggestionsMatchingPublicCode:
         value: true
       copilotEditorPlugin:

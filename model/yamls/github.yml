@@ -478,14 +478,14 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 1
     unit: GB
-    linkedFeature:
+    linkedFeatures:
       - gitLFS
   gitLFSBandwithLimit:
     description: ""
     valueType: NUMERIC
     defaultValue: 1
     unit: GB
-    linkedFeature:
+    linkedFeatures:
       - gitLFS
 plans:
   FREE:

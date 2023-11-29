@@ -408,6 +408,7 @@ usageLimits:
     description: 'Free tier usage limit for public repositories'
     valueType: BOOLEAN
     defaultValue: false
+    type: CAPACITY
     linkedFeatures:
       - protectedBranches
       - codeOwners
@@ -443,6 +444,7 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 1000
     unit: minute/month
+    type: QUOTA
     linkedFeatures: 
       - githubActions
   diskSpaceForGithubPackages:
@@ -450,6 +452,7 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 0.5
     unit: GB
+    type: CAPACITY
     linkedFeatures: 
       - githubPackages
   githubCodepacesStorage:
@@ -457,6 +460,7 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 15
     unit: GB/month
+    type: QUOTA
     linkedFeatures: 
       - githubCodespaces
   githubCodepacesCoreHours:
@@ -464,6 +468,7 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 120
     unit: coreHours/month
+    type: QUOTA
     linkedFeatures:
       - githubCodespaces
   gitLFSMaximunFileSize:
@@ -471,6 +476,7 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 2
     unit: GB
+    type: CAPACITY
     linkedFeatures:
       - gitLFS
   gitLFSStorageLimit:
@@ -478,6 +484,7 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 1
     unit: GB
+    type: CAPACITY
     linkedFeatures:
       - gitLFS
   gitLFSBandwithLimit:
@@ -485,6 +492,7 @@ usageLimits:
     valueType: NUMERIC
     defaultValue: 1
     unit: GB
+    type: CAPACITY
     linkedFeatures:
       - gitLFS
 plans:

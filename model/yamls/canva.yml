@@ -21,104 +21,104 @@ features:
     defaultValue: 8,000+
     type: DOMAIN
   customDimensionDesigns:
-    description: Create designs with custom dimensions
+    description: "Create designs with custom dimensions"
     valueType: BOOLEAN
     defaultValue: true
     type: DOMAIN
   export1:
-    description: Export designs as PDF, JPG, PNG
+    description: "Export designs as PDF, JPG, PNG"
     valueType: BOOLEAN
     defaultValue: true
     type: DOMAIN
   export2:
-    description: Export designs print ready designs / as CMYK
+    description: "Export designs print ready designs / as CMYK"
     valueType: BOOLEAN
     defaultValue: false
     type: DOMAIN
   socialSharing&PresentationMode:
-    description: Built-in social sharing & presentation mode
+    description: "Built-in social sharing & presentation mode"
     valueType: BOOLEAN
     defaultValue: true
     type: DOMAIN
   customTemplates:
-    description: Custom templates
+    description: "Custom templates"
     valueType: BOOLEAN
     defaultValue: false
     type: DOMAIN
   saveDesingsAsTemplates:
-    description: Save designs as templates (incluede template locking)
+    description: "Save designs as templates (incluede template locking)"
     valueType: BOOLEAN
     defaultValue: false
     type: DOMAIN
   premiumAssets:
-    description: Premium templates, Animations, Fonts, Videos
+    description: "Premium templates, Animations, Fonts, Videos"
     valueType: BOOLEAN
     defaultValue: false
     type: DOMAIN
   mediaTagging:
-    description: Media tagging
+    description: "Media tagging"
     valueType: BOOLEAN
     defaultValue: false
     type: DOMAIN
   backgroundRemover:
-    description: Background remover
+    description: "Background remover"
     valueType: BOOLEAN
     defaultValue: false
     type: DOMAIN
   contentPlannerPlusFeatures:
-    description: More features in Content Planner
+    description: "More features in Content Planner"
     valueType: BOOLEAN
     defaultValue: false
     type: DOMAIN
   insightsPlus:
-    description: More Design Insights (Social Media + Sites)
+    description: "More Design Insights (Social Media + Sites)"
     valueType: BOOLEAN
     defaultValue: false
     type: INFORMATION
   magicMediaText2Image:
-    description: Text to image
+    description: "Text to image"
     valueType: TEXT
     defaultValue: 50 total uses
     type: AUTOMATION
     automationType: BOT
   magicMediaText2Video:
-    description: Text to Video
+    description: "Text to Video"
     valueType: TEXT
     defaultValue: '5 total uses'
     type: AUTOMATION
     automationType: BOT
   magicDesign:
-    description: From idea to design, instantly
+    description: "From idea to design, instantly"
     valueType: BOOLEAN
     defaultValue: true
     type: AUTOMATION
     automationType: BOT
   magicEdit:
-    description: Add or replace something in an image
+    description: "Add or replace something in an image"
     valueType: TEXT
     defaultValue: 100 uses daily
     type: AUTOMATION
     automationType: BOT
   magicEraser:
-    description: Remove unwanted details in images
+    description: "Remove unwanted details in images"
     valueType: BOOLEAN
     defaultValue: false
     type: AUTOMATION
     automationType: BOT
   magicWrite:
-    description: Magic write with brand voice. AI powered writing assistant
+    description: "Magic write with brand voice. AI powered writing assistant"
     valueType: TEXT
     defaultValue: 50 total uses
     type: AUTOMATION
     automationType: BOT
   translator:
-    description: Translate text in your designs to over 100 languages
+    description: "Translate text in your designs to over 100 languages"
     valueType: TEXT
     defaultValue: 50 total pages
     type: AUTOMATION
     automationType: TASK_AUTOMATION
   beatSync:
-    description: Sync your video footage to your soundtrack
+    description: "Sync your video footage to your soundtrack"
     valueType: TEXT
     defaultValue: Manually sync your video footage to your soundtrack
     type: DOMAIN
@@ -293,7 +293,7 @@ features:
     defaultValue: true
     type: DOMAIN
   singleSignOn:
-    description: Single Sign-On (SSO) Integrations
+    description: "Single Sign-On (SSO) Integrations"
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
@@ -348,14 +348,14 @@ usageLimits:
       - cloudStorage
 plans:
   FREE:
-    description: For anyone to design anything, on their own or with family, friends, or others. No experience required.
+    description: "For anyone to design anything, on their own or with family, friends, or others. No experience required."
     monthlyPrice: 0
     annualPrice: 0
     unit: user/month
     features: null
     usageLimits: null
   PRO:
-    description: For individuals, solopreneurs and freelance designers who want unlimited access to premium content, to create professional designs with ease and scale their productivity.
+    description: "For individuals, solopreneurs and freelance designers who want unlimited access to premium content, to create professional designs with ease and scale their productivity."
     monthlyPrice: 11.99
     annualPrice: 109.99
     unit: user/month
@@ -432,7 +432,7 @@ plans:
       cloudStorageLimit:
         value: 1000
   TEAMS:
-    description: All the great features of Canva Pro, plus we think you'll love these features designed to allow teams of all sizes to collaborate with ease.
+    description: "All the great features of Canva Pro, plus we think you'll love these features designed to allow teams of all sizes to collaborate with ease."
     monthlyPrice: 23.00
     annualPrice: 240
     unit: user/month

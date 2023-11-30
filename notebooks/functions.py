@@ -50,7 +50,7 @@ def create_chart_data(objective_attribute):
 
   return chart_data
 
-def plot_dumbell_chart(chart_data, title, x_axis_name, include_title):
+def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, font_size=20):
   """
   Plots a dumbell chart to see the evolution of a field between 2019 and 2023
   """
@@ -96,7 +96,7 @@ def plot_dumbell_chart(chart_data, title, x_axis_name, include_title):
       legend_itemclick=False,
       xaxis_title=x_axis_name,
       font=dict(
-        size=20
+        size=font_size
         ),
   )
 

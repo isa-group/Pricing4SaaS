@@ -55,6 +55,10 @@ def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, font_size=
   Plots a dumbell chart to see the evolution of a field between 2019 and 2023
   """
 
+  colors = plt.cm.viridis_r(
+      [i / float(len(YEARS_STUDIED) - 1) for i in range(len(YEARS_STUDIED))]
+  )
+
   data = data=[
           go.Scatter(
               x=chart_data["line_x"],
@@ -70,7 +74,7 @@ def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, font_size=
   for i in range(len(YEARS_STUDIED)):
 
     year = YEARS_STUDIED[i]
-    color = COLORS[i]
+    color = colors[i]
 
     data.append(
         go.Scatter(

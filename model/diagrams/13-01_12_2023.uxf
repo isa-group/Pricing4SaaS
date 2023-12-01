@@ -39,7 +39,7 @@ m1=1..n
 m2=0..n</panel_attributes><additional_attributes>160;200;160;110;10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>500</y><w>190</w><h>230</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;&gt;
 m1=0..n
 m2=0..n</panel_attributes><additional_attributes>10;210;10;120;150;120;150;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>890</y><w>100</w><h>30</h></coordinates><panel_attributes>Quota</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>760</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=-&gt;
-m1=0..1
+m1=0..n
 &lt; limited by
 m2=0..n</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>510</y><w>170</w><h>220</h></coordinates><panel_attributes>lt=-&gt;
 m1=0..n

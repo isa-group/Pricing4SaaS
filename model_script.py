@@ -3,7 +3,7 @@
 from os import path
 import yaml
 
-file_name = "canva" + ".yml"
+file_name = "wrike" + ".yml"
 path = path.join("model", "yamls", file_name)
 
 features = dict()
@@ -63,12 +63,9 @@ for feature_name in file_features.keys():
         )
 
 for usage_limit in file_usage_limits.keys():
-    if file_usage_limits[usage_limit].get("linkedFeatures") == None:
-        raise ValueError(
-            f'Usage limit: "{usage_limit}" has no attribute linkedFeatures'
-        )
-
-    if not isinstance(file_usage_limits[usage_limit]["linkedFeatures"], list):
+    if file_usage_limits[usage_limit].get("linkedFeatures") != None and not isinstance(
+        file_usage_limits[usage_limit]["linkedFeatures"], list
+    ):
         raise ValueError(
             f'Usage limit: "{usage_limit}" is not a list of linked features'
         )

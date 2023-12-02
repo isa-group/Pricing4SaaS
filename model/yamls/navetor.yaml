@@ -99,7 +99,21 @@ features:
     defaultValue: true
     type: GUARANTEE
     docUrl: https://www.navetor.com/pricing
-usageLimits: null
+usageLimits:
+  lowerUserBoundary:
+    description: ""
+    valueType: NUMERIC
+    defaultValue: 1
+    unit: user
+    type: CAPACITY
+    linkedFeatures: null
+  upperUserBoundary:
+    description: ""
+    valueType: NUMERIC
+    defaultValue: 2
+    unit: user
+    type: CAPACITY
+    linkedFeatures: null
 plans:
   1/2Users:
     description: ""
@@ -112,25 +126,41 @@ plans:
     monthlyPrice: 250
     unit: user/month
     features: null
-    usageLimits: null
+    usageLimits:
+      lowerUserBoundary:
+        value: 3
+      upperUserBoundary:
+        value: 11
   12/20Users:
     description: ""
     monthlyPrice: 299
     unit: user/month
     features: null
-    usageLimits: null
+    usageLimits:
+      lowerUserBoundary:
+        value: 12
+      upperUserBoundary:
+        value: 20
   21/30Users:
     description: ""
     monthlyPrice: 360
     unit: user/month
     features: null
-    usageLimits: null
+    usageLimits:
+      lowerUserBoundary:
+        value: 21
+      upperUserBoundary:
+        value: 30
   31+Users:
     description: ""
     monthlyPrice: 500
     unit: user/month
     features: null
-    usageLimits: null
+    usageLimits:
+      lowerUserBoundary:
+        value: 31
+      upperUserBoundary:
+        value: .inf
 addOns:
   emailAndTextCommunications:
     availableFor:

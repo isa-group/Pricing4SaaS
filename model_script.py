@@ -3,10 +3,11 @@
 from os import path
 import yaml
 
-file_name = "wrike" + ".yml"
+file_name = "salescloud" + ".yml"
 path = path.join("model", "yamls", file_name)
 
 features = dict()
+usage_limits = dict()
 
 with open(path) as file:
     pricing = yaml.safe_load(file)
@@ -69,6 +70,20 @@ for usage_limit in file_usage_limits.keys():
         raise ValueError(
             f'Usage limit: "{usage_limit}" is not a list of linked features'
         )
+    if file_usage_limits[usage_limit]["valueType"] == "BOOLEAN":
+        usage_limits[usage_limit] = {
+            "value": file_usage_limits[usage_limit]["defaultValue"]
+        }
+    elif file_usage_limits[usage_limit]["valueType"] == "TEXT":
+        usage_limits[usage_limit] = {
+            "value": file_usage_limits[usage_limit]["defaultValue"]
+        }
+    else:
+        usage_limits[usage_limit] = {
+            "value": file_usage_limits[usage_limit]["defaultValue"]
+        }
 
-
-print(yaml.dump(features, sort_keys=False))
+print("Total number of features: ", len(features))
+# print(yaml.dump(features, sort_keys=False))
+print("---------------------------------")
+print(yaml.dump(usage_limits, sort_keys=False))

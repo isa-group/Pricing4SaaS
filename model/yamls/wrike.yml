@@ -1,8 +1,9 @@
 saasName: wrike
-day: 28
-month: 11
+day: 3
+month: 12
 year: 2023
 currency: USD
+hasAnnualPayment: true
 features:
   multiLanguageSupport:
     description: "Wrike supports multiple languages: German, English, French, Italian, Japanese, Portuguese, Spanish, and Russian."
@@ -487,6 +488,7 @@ plans:
   TEAM:
     description: "Effective team management"
     monthlyPrice: 9.8
+    annualPrice: 9.8
     unit: user/month
     features:
       storageSpace:
@@ -515,6 +517,7 @@ plans:
   BUSINESS:
     description: "Customizable platform for any use case"
     monthlyPrice: 24.8
+    annualPrice: 24.8
     unit: user/month
     features:
       brandedWorkspace:      
@@ -603,6 +606,7 @@ plans:
   ENTERPRISE:
     description: "Enterprise-grade security and scalability"
     monthlyPrice: Contact Sales
+    annualPrice: Contact Sales
     features:
       brandedWorkspace:      
         value: true
@@ -714,6 +718,7 @@ plans:
   PINNACLE:
     description: "Advanced tools and analytics for complex work"
     monthlyPrice: Contact sales
+    annualPrice: Contact sales
     features:
       brandedWorkspace:      
         value: true

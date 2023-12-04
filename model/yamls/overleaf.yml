@@ -1,5 +1,5 @@
 saasName: overleaf
-day: 30
+day: 28
 month: 11
 year: 2023
 currency: USD
@@ -113,8 +113,8 @@ plans:
     usageLimits: null
   STANDARD:
     description: ""
-    monthlyPrice: 19.0
-    annualPrice: 179.0
+    monthlyPrice: 21.0
+    annualPrice: 16.59
     unit: user/month
     features:
       compileServers:
@@ -146,8 +146,8 @@ plans:
         value: 4
   PROFESSIONAL:
     description: ""
-    monthlyPrice: 39.0
-    annualPrice: 369.0
+    monthlyPrice: 42
+    annualPrice: 33.25
     unit: user/month
     features:
       compileServers:

@@ -72,7 +72,7 @@ features:
     valueType: BOOLEAN
     defaultValue: true
     type: INTEGRATION"
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://developers.google.com/gmail/api/guides/
       - https://learn.microsoft.com/es-es/outlook/rest/
@@ -111,7 +111,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://www.tableau.com/es-es/data-insights/business-intelligence
   businessIntelligenceAPI:
@@ -293,7 +293,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://www.microsoft.com/en-us/microsoft-365/sharepoint/compare-sharepoint-plans
   extensionForAdobeCreativeCloud:
@@ -324,7 +324,7 @@ features:
     valueType: BOOLEAN
     defaultValue: true
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://skyvia.com/pricing/
       - https://www.mediavalet.com/pricing-request
@@ -339,7 +339,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://workspace.google.com/intl/es/pricing.html
       - https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
@@ -350,7 +350,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://www.salesforce.com/eu/
   netSuiteAndQuickBookIntegrations:
@@ -365,7 +365,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://www.adobe.com/creativecloud/plans.html
   powerBIIntegration:
@@ -373,7 +373,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://powerbi.microsoft.com/en-us/pricing/
   enterpriseGradeSecurity:

@@ -211,7 +211,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://slack.com/pricing
   sendMicrosoftTeamsMessages:
@@ -219,7 +219,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-business-options
   createAndSendCalendarInvites:

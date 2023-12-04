@@ -507,8 +507,8 @@ plans:
     usageLimits: null
   TEAM:
     description: "Advanced collaboration for individuals and organizations"
-    monthlyPrice: 4
-    annualPrice: 48
+    monthlyPrice: 4.0
+    annualPrice: 48.0
     unit: user/month
     features:
       githubCodespaces:
@@ -530,8 +530,8 @@ plans:
         value: 4
   ENTERPRISE:
     description: "Security, compliance, and flexible deployment"
-    monthlyPrice: 21
-    annualPrice: 252
+    monthlyPrice: 21.0
+    annualPrice: 252.0
     unit: user/month
     features:
       codeOwners:
@@ -578,7 +578,7 @@ addOns:
     availableFor:
       - FREE
       - TEAM
-    price: 10
+    price: 10.0
     unit: user/month
     features:
       copilotChatInIDEAndMobile:
@@ -627,7 +627,7 @@ addOns:
     availableFor:
       - TEAM
       - ENTERPRISE
-    price: 19
+    price: 19.0
     unit: user/month
     features:
       copilotChatInIDEAndMobile:
@@ -655,7 +655,7 @@ addOns:
   githubCopilotEnterprise:
     availableFor:
       - ENTERPRISE
-    price: 39
+    price: 39.0
     unit: user/month
     features:
       copilotChatInIDEAndMobile:
@@ -777,7 +777,7 @@ addOns:
       - FREE
       - TEAM
       - ENTERPRISE
-    monthlyPrice: 5
+    monthlyPrice: 5.0
     unit: user/month
     features: null
     usageLimits: null

@@ -184,7 +184,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType: WEEB_SAAS
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://quickbooks.intuit.com/global/pricing/
   taskRates:

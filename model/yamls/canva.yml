@@ -437,7 +437,7 @@ plans:
   TEAMS:
     description: "All the great features of Canva Pro, plus we think you'll love these features designed to allow teams of all sizes to collaborate with ease."
     monthlyPrice: 23.00
-    annualPrice: 240
+    annualPrice: 240.0
     unit: user/month
     features:
       assets1:
@@ -527,3 +527,4 @@ plans:
         value: 300
       cloudStorageLimit:
         value: 1000
+addOns: null

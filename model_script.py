@@ -3,7 +3,7 @@
 from os import path
 import yaml
 
-file_name = "salescloud" + ".yml"
+file_name = "clockify" + ".yml"
 path = path.join("model", "yamls", file_name)
 
 features = dict()
@@ -63,27 +63,30 @@ for feature_name in file_features.keys():
             f'Feature: "{feature_name}" is a payment feature a is not a list'
         )
 
-for usage_limit in file_usage_limits.keys():
-    if file_usage_limits[usage_limit].get("linkedFeatures") != None and not isinstance(
-        file_usage_limits[usage_limit]["linkedFeatures"], list
-    ):
-        raise ValueError(
-            f'Usage limit: "{usage_limit}" is not a list of linked features'
-        )
-    if file_usage_limits[usage_limit]["valueType"] == "BOOLEAN":
-        usage_limits[usage_limit] = {
-            "value": file_usage_limits[usage_limit]["defaultValue"]
-        }
-    elif file_usage_limits[usage_limit]["valueType"] == "TEXT":
-        usage_limits[usage_limit] = {
-            "value": file_usage_limits[usage_limit]["defaultValue"]
-        }
-    else:
-        usage_limits[usage_limit] = {
-            "value": file_usage_limits[usage_limit]["defaultValue"]
-        }
+if file_usage_limits != None:
+    for usage_limit in file_usage_limits.keys():
+        if file_usage_limits[usage_limit].get(
+            "linkedFeatures"
+        ) != None and not isinstance(
+            file_usage_limits[usage_limit]["linkedFeatures"], list
+        ):
+            raise ValueError(
+                f'Usage limit: "{usage_limit}" is not a list of linked features'
+            )
+        if file_usage_limits[usage_limit]["valueType"] == "BOOLEAN":
+            usage_limits[usage_limit] = {
+                "value": file_usage_limits[usage_limit]["defaultValue"]
+            }
+        elif file_usage_limits[usage_limit]["valueType"] == "TEXT":
+            usage_limits[usage_limit] = {
+                "value": file_usage_limits[usage_limit]["defaultValue"]
+            }
+        else:
+            usage_limits[usage_limit] = {
+                "value": file_usage_limits[usage_limit]["defaultValue"]
+            }
 
 print("Total number of features: ", len(features))
-# print(yaml.dump(features, sort_keys=False))
+print(yaml.dump(features, sort_keys=False))
 print("---------------------------------")
 print(yaml.dump(usage_limits, sort_keys=False))

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7631],{97631:function(e,t,n){n.r(t),n.d(t,{CtaBlockHeading:function(){return u}});var c=n(94184),a=n(67294),l=n(66353),s=n(20551);let r=(0,s.Q)("cta-block__heading"),u=({children:e,className:t})=>a.createElement(l.X,{type:"h3",textAlign:{xs:"center"},className:c(r,t)},e)}}]);

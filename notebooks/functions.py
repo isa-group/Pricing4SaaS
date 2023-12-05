@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
@@ -99,6 +100,9 @@ def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, font_size=
         size=font_size
         ),
   )
+
+  if not os.path.exists("figures"):
+    os.mkdir("figures")
 
   formatted_title = title.title().replace(" ", "")
 

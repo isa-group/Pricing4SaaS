@@ -100,6 +100,10 @@ def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, font_size=
         ),
   )
 
+  formatted_title = title.title().replace(" ", "")
+
+  fig.write_image("figures/"+"".join(formatted_title[0].lower(), formatted_title[1:])+".png")
+
   fig.show()
 
 def plot_evolution_graph(attribute):

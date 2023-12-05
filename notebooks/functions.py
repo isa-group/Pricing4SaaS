@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 YEARS_STUDIED = ["2019", "2020", "2021", "2022", "2023"]
-COLORS = ["#030060", "#024083", "#0280A5", "#01BFC8", "#00FFEA"]
+COLORS = ["#030060", "#023088", "#0260B0", "#018FD7", "#00BFFF"]
 
 # DEFINITION OF USEFUL FUNCTIONS
 

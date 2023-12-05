@@ -51,7 +51,7 @@ def create_chart_data(objective_attribute):
 
   return chart_data
 
-def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, font_size=20):
+def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, export_path="figures", font_size=20):
   """
   Plots a dumbell chart to see the evolution of a field between 2019 and 2023
   """
@@ -101,12 +101,12 @@ def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, font_size=
         ),
   )
 
-  if not os.path.exists("figures"):
-    os.mkdir("figures")
+  if not os.path.exists(export_path):
+    os.mkdir(export_path)
 
   formatted_title = title.title().replace(" ", "")
 
-  fig.write_image("figures/"+"".join([formatted_title[0].lower(), formatted_title[1:]])+".png")
+  fig.write_image(export_path+"/"+"".join([formatted_title[0].lower(), formatted_title[1:]])+".png")
 
   fig.show()
 
@@ -240,7 +240,7 @@ def show_statistics(key_metric):
 
   print(f"\nThere has been, on average, an increase of {int(average_variation)}% in the {key_metric} metric.\n")
 
-def show_evolution_of_common_features_percentage(fontsize):
+def show_evolution_of_common_features_percentage(fontsize, export_path="figures"):
   # Calculate the percentage of common features for each SaaS
   PRICING_DATA['PercentageCommonFeatures'] = (PRICING_DATA['numberOfCommonFeatures'] / PRICING_DATA['numberOfFeatures']) * 100
 
@@ -271,6 +271,11 @@ def show_evolution_of_common_features_percentage(fontsize):
 
   # Automaticaly adjust the design to avoid superposition
   plt.tight_layout()
+
+  if not os.path.exists(export_path):
+    os.mkdir(export_path)
+
+  plt.savefig(export_path+"/"+"evolutionOfPercentageOfCommonFeatures.png")
 
   # Show the graph
   plt.show()

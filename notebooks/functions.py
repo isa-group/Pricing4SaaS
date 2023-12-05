@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 YEARS_STUDIED = ["2019", "2020", "2021", "2022", "2023"]
-COLORS = ["#161d5c", "#43287f", "#742e9e", "#ab2db8", "#e61ecb"]
+COLORS = ["#030060", "#024083", "#0280A5", "#01BFC8", "#00FFEA"]
 
 # DEFINITION OF USEFUL FUNCTIONS
 
@@ -51,7 +51,7 @@ def create_chart_data(objective_attribute):
 
   return chart_data
 
-def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, export_path="figures", font_size=20):
+def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, export_path="figures", font_size=20, marker_size=10):
   """
   Plots a dumbell chart to see the evolution of a field between 2019 and 2023
   """
@@ -81,7 +81,7 @@ def plot_dumbell_chart(chart_data, title, x_axis_name, include_title, export_pat
               name=year,
               marker=dict(
                   color=color,
-                  size=10
+                  size=marker_size
               )
 
           )

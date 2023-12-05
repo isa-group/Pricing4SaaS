@@ -3,7 +3,7 @@
 from os import path
 import yaml
 
-file_name = "clockify" + ".yml"
+file_name = "monday" + ".yml"
 path = path.join("model", "yamls", file_name)
 
 features = dict()

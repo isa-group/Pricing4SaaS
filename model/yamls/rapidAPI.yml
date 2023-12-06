@@ -174,28 +174,28 @@ usageLimits:
     defaultValue: 2000000
     unit: calls
     type: CAPACITY
-    linkedFeature: null
+    linkedFeatures: null
   numberOfApis:
     description: ""
     valueType: NUMERIC
     defaultValue: .inf
     unit: api
     type: CAPACITY
-    linkedFeature: null
+    linkedFeatures: null
   numberOfBuilders:
     description: ""
     valueType: NUMERIC
     defaultValue: 5
     unit: builder
     type: CAPACITY
-    linkedFeature: null
+    linkedFeatures: null
   numberOfAdmins:
     description: ""
     valueType: NUMERIC
     defaultValue: 0
     unit: admin
     type: CAPACITY
-    linkedFeature: null
+    linkedFeatures: null
 plans:
   BASIC:
     description: "List your APIs on the world's largest API Hub"

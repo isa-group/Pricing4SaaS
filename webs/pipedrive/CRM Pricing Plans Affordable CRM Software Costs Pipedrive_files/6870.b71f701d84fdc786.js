@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6870],{66870:function(e,t,c){c.r(t),c.d(t,{CtaBlockFooter:function(){return l}});var a=c(94184),n=c(67294),o=c(20551);let r=(0,o.Q)("cta-block__footer"),l=({children:e,className:t})=>n.createElement("div",{className:a(r,t)},e)}}]);

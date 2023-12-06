@@ -280,14 +280,16 @@ usageLimits:
     defaultValue: 50
     unit: GB
     type: CAPACITY
-    linkedFeature: mailbox
+    linkedFeatures:
+      - mailbox
   webinarsMaxLimit:
     description: ""
     valueType: NUMERIC
     defaultValue: 300
     unit: people
     type: CAPACITY
-    linkedFeature: webinars
+    linkedFeatures:
+      - webinars
 plans:
   BUSINESS_BASIC:
     description: ""

@@ -1,9 +1,9 @@
-saasName: overleaf
+saasName: Overleaf
 day: 28
 month: 11
 year: 2023
 currency: USD
-hasAnnualPaymentOption: true
+hasAnnualPayment: true
 features:
   compileServers:
     description: "Compiles for users on premium plans always run on a dedicated pool of the fastest available servers."
@@ -72,7 +72,7 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType:
+    integrationType: WEB_SAAS
     pricingsUrls:
       - https://www.mendeley.com/reference-management/premium
   zoteroIntegration:
@@ -96,7 +96,7 @@ usageLimits:
     unit: collaborator
     type: CAPACITY
     linkedFeatures: null
-  compileTimeout:
+  compileTimeoutLimit:
     description: "This is how much time you get to compile your project on the Overleaf servers. You may need additional time for longer or more complex projects."
     valueType: NUMERIC
     defaultValue: 1
@@ -142,7 +142,7 @@ plans:
     usageLimits:
       maxCollaboratorsPerProject:
         value: 11
-      compileTimeout:
+      compileTimeoutLimit:
         value: 4
   PROFESSIONAL:
     description: ""

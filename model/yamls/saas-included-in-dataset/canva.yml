@@ -352,8 +352,8 @@ usageLimits:
 plans:
   FREE:
     description: "For anyone to design anything, on their own or with family, friends, or others. No experience required."
-    monthlyPrice: 0
-    annualPrice: 0
+    monthlyPrice: 0.0
+    annualPrice: 0.0
     unit: user/month
     features: null
     usageLimits: null

@@ -1,4 +1,4 @@
-saasName: wrike
+saasName: Wrike
 day: 3
 month: 12
 year: 2023
@@ -72,7 +72,7 @@ features:
     description: "https://www.wrike.com/apps/email-integration/"
     valueType: BOOLEAN
     defaultValue: true
-    type: INTEGRATION"
+    type: INTEGRATION
     integrationType: WEB_SAAS
     pricingsUrls:
       - https://developers.google.com/gmail/api/guides/
@@ -359,7 +359,8 @@ features:
     valueType: BOOLEAN
     defaultValue: false
     type: INTEGRATION
-    integrationType:
+    integrationType: WEB_SAAS
+    pricingsUrls:
       - https://www.netsuite.com/portal/products/erp/order-management/pricing.shtml
   adobeCreativeCloudExtension:
     description: "https://www.wrike.com/apps/extensions/adobe/"

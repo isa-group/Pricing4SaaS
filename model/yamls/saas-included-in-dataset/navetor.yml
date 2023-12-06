@@ -1,4 +1,4 @@
-saasName: navetor
+saasName: Navetor
 day: 30
 month: 11
 year: 2023
@@ -79,8 +79,8 @@ features:
     type: DOMAIN
   support:
     description: ""
-    valueType: BOOLEAN
-    defaultValue: Unlimited 24/7 technical support via email, live chat, and phone
+    valueType: TEXT
+    defaultValue: "Unlimited 24/7 technical support via email, live chat, and phone"
     type: DOMAIN
   dataStorage:
     description: "Unlimited data storage"

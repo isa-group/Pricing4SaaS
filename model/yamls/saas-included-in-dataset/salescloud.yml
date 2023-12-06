@@ -332,7 +332,7 @@ usageLimits:
   numberOfCampaignsPerOportunity:
     description: ""
     valueType: NUMERIC
-    defaultValue: 0
+    defaultValue: 3
     unit: campaign/opportunity
     type: CAPACITY
     linkedFeatures:
@@ -340,7 +340,7 @@ usageLimits:
   numberOfCustomAppsPerOrg:
     description: ""
     valueType: NUMERIC
-    defaultValue: 0
+    defaultValue: 1
     unit: customApp/Org
     type: CAPACITY
     linkedFeatures:
@@ -356,7 +356,7 @@ usageLimits:
   numberOfCustomizableProfiles:
     description: ""
     valueType: NUMERIC
-    defaultValue: 0
+    defaultValue: 2
     unit: profile/org
     type: CAPACITY
     linkedFeatures:
@@ -364,7 +364,7 @@ usageLimits:
   numberOfRoles:
     description: ""
     valueType: NUMERIC
-    defaultValue: 0
+    defaultValue: 2
     unit: rol/org
     type: CAPACITY
     linkedFeatures:
@@ -372,7 +372,7 @@ usageLimits:
   numberOfRecordTypes:
     description: ""
     valueType: NUMERIC
-    defaultValue: 0
+    defaultValue: 3
     unit: type/object
     type: CAPACITY
     linkedFeatures:
@@ -380,7 +380,7 @@ usageLimits:
   numberOfPartialSandbox:
     description: ""
     valueType: NUMERIC
-    defaultValue: 0
+    defaultValue: 1
     unit: partialSanbox/org
     type: CAPACITY
     linkedFeatures:
@@ -388,7 +388,7 @@ usageLimits:
   numberOfFullSanbox:
     description: ""
     valueType: NUMERIC
-    defaultValue: 0
+    defaultValue: 1
     unit: fullSanbox/org
     type: CAPACITY
     linkedFeatures:
@@ -441,17 +441,7 @@ plans:
         value: true
       developerSandbox:
         value: true
-    usageLimits:
-      numberOfCampaignsPerOportunity:
-        value: 3
-      numberOfCustomAppsPerOrg:
-        value: 1
-      numberOfCustomizableProfiles:
-        value: 2
-      numberOfRoles:
-        value: 2
-      numberOfRecordTypes:
-        value: 3
+    usageLimits: null
   ENTERPRISE:
     description: "Deeply customizable sales CRM for your business"
     monthlyPrice: 165.0
@@ -523,8 +513,6 @@ plans:
         value: .inf
       numberOfRecordTypes:
         value: .inf
-      numberOfPartialSandbox:
-        value: 1
   UNLIMITED:
     description: "The ultimate platform for growth"
     monthlyPrice: 330.0
@@ -693,16 +681,6 @@ addOns:
         value: true
     usageLimits: null
     usageLimitsExtensions: null
-  developerFullSandbox:
-    availableFor:
-      - ENTERPRISE
-    price: Contact sales
-    unit: user/month
-    features:
-      developerFullSandbox:
-        value: true
-    usageLimits: null
-    usageLimitsExtensions: null
   premiumActivityCapture:
     availableFor:
       - PROFESSIONAL
@@ -721,16 +699,6 @@ addOns:
     unit: user/month
     features:
       salesCadences:
-        value: true
-    usageLimits: null
-    usageLimitsExtensions: null
-  webServicesAPI:
-    availableFor:
-      - PROFESSIONAL
-    price: 25.0
-    unit: user/month
-    features:
-      webServicesAPI:
         value: true
     usageLimits: null
     usageLimitsExtensions: null

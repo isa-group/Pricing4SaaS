@@ -1,4 +1,4 @@
-saasName: pipedrive
+saasName: Pipedrive
 day: 4
 month: 12
 year: 2023
@@ -217,7 +217,8 @@ features:
     description: ""
     valueType: BOOLEAN
     defaultValue: false
-    type: TASK_AUTOMATION
+    type: AUTOMATION
+    automationType: TASK_AUTOMATION
   dealReports:
     description: ""
     valueType: BOOLEAN

@@ -359,8 +359,8 @@ usageLimits: null
 plans:
   FREE:
     description: ""
-    monthlyPrice: 0
-    annualPrice: 0
+    monthlyPrice: 0.0
+    annualPrice: 0.0
     unit: user/month
     features: null
     usageLimits: null

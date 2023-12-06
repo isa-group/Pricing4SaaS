@@ -395,7 +395,7 @@ usageLimits:
     defaultValue: 100
     unit: team
     type: CAPACITY
-    linkedFeatures:
+    linkedFeatures: 
       - teams
   modesLimits:
     description: ""
@@ -403,7 +403,7 @@ usageLimits:
     defaultValue: 0
     unit: mode
     type: CAPACITY
-    linkedFeatures:
+    linkedFeatures: 
       - modes
 plans:
   STARTER:

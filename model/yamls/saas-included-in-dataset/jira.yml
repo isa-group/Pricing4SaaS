@@ -626,7 +626,7 @@ plans:
       organizationProfilesAndFields:
         value: true
       externalCustomerSSO:
-        value: true
+        value: "Included"
       atlassianAnalytics:
         value: true
       atlassianDataLake:
@@ -634,7 +634,7 @@ plans:
       dataConnectors:
         value: true
       atlassianAccess:
-        value: true
+        value: "Included"
       auditLogs:
         value: true
       dataResidency:

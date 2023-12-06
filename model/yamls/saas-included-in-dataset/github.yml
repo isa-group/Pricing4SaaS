@@ -357,7 +357,7 @@ features:
     description: ""
     valueType: BOOLEAN
     defaultValue: false
-    type: TRACKING
+    type: AUTOMATION
     automationType: BOT
   copilotBlocksSuggestionsMatchingPublicCode:
     description: ""
@@ -431,6 +431,7 @@ usageLimits:
     description: "Team tear usage limit for public repositories"
     valueType: BOOLEAN
     defaultValue: false
+    type: CAPACITY
     linkedFeatures:
       - enviromentProtectionRules
       - codeScanning
@@ -498,8 +499,8 @@ usageLimits:
 plans:
   FREE:
     description: "The basics for individuals and organizations"
-    monthlyPrice: 0
-    annualPrice: 0
+    monthlyPrice: 0.0
+    annualPrice: 0.0
     unit: user/month
     features:
       githubCodespaces:

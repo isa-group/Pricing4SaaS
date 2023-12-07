@@ -12,7 +12,7 @@ With this state of the art, several advances are necessary to achieve the automa
 
 ## Structure
 
-The labpack contains three main folders:
+The labpack contains five main folders:
 
 - **datasets**: contains the .xlsx dataset file consumed by the notebook to extract results. It is contains the analyses conducted on thirteen distinct SaaS platforms annually, spanning from 2019 to 2023.
 - **model**: which is divided into another two:

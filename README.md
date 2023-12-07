@@ -8,7 +8,7 @@ When a customer subscribes to a SaaS, they accept the conditions set out in thei
 
 Capacities 
 %\aruiz{(…. completar con las observaciones sobre los 13 saas)}\agarcia{realmente todos los SaaS se refieren como features a las capacidades, por supuesto, entendiendo como feature nuestra definición} 
-collected in a pricing are referred as ``features’’, and we define them as ``distinctive characteristics whose presence/absence may guide a user’s decision towards a particular subscription’’. This notion of feature has a bigger scope than the one given for Software Product Lines (SPLs) or feature toggling. In both cases, the concept tends to be fundamentally limited to increases in functionality, leaving out aspects related to capacity, support or quality of service.
+collected in a pricing are referred as **features**, and we define them as "distinctive characteristics whose presence/absence may guide a user’s decision towards a particular subscription". This notion of feature has a bigger scope than the one given for Software Product Lines (SPLs) or feature toggling. In both cases, the concept tends to be fundamentally limited to increases in functionality, leaving out aspects related to capacity, support or quality of service.
 
 With this state of the art, several advances are necessary to achieve the automatic adaptation of IS to changes in their pricings. Hence, the primary objective of this paper is to formalise pricings in order to establish a sound basis for automating the analysis and management of the variability they introduce in SaaS products.
 

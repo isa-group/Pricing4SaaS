@@ -2,7 +2,15 @@
 
 ## Context
 
-Pricing within the realm of Software as a Service (SaaS) is a complex and dynamic undertaking, blending the elements of both art and science. They were adopted by API developers from other sectors to profit from their technology, whose objective was to limit third-party access to the software, coining terms such as quota and rate that governed its use. Their evolution in the software industry has been a remarkable phenomenon, as many companies adopted the strategy and applied it to their SaaS products, leading to new strategies of pricing plans. These plans do not only impose usage limitations, but they also empower users to select the desired level of SLA coverage and access specific features tailored to their needs.
+The SaaS (Software as a Service) model is a software distribution and licensing model where software is provided as a service on a subscription basis. Instead of purchasing and installing software locally on premises, users access the software and its features through a web browser over the cloud. When an IS is provided as SaaS, it is also a service, and as such ``is a means of delivering value to customers by facilitating outcomes customers want to achieve, without the ownership of specific costs and risks’’.
+
+When a customer subscribes to a SaaS, they accept the conditions set out in their Cutomer Agreement (CA), which, in addition to the general terms of use, include, among others, pricing and SLA. The meaning and scope of the term ``pricing’’ differs slightly between what is found in the literature and on SaaS websites. On the one hand, the related literature it is most common to focus on different models and strategies for setting a price to the use of the service, ignoring or paying little attention to any other information. On the other hand, based on our review of real-world pricings, we can state that the shown on SaaS websites are structures that, besides expressing the price and payment model, relates them to the capacities available within the SaaS, the level of support and quality of service. This concept is close to the one proposed in which, as far as we know, is the first time that contextualises the notion of pricing as part of the CA that regulates the provision of cloud services.
+
+Capacities 
+%\aruiz{(…. completar con las observaciones sobre los 13 saas)}\agarcia{realmente todos los SaaS se refieren como features a las capacidades, por supuesto, entendiendo como feature nuestra definición} 
+collected in a pricing are referred as ``features’’, and we define them as ``distinctive characteristics whose presence/absence may guide a user’s decision towards a particular subscription’’. This notion of feature has a bigger scope than the one given for Software Product Lines (SPLs) or feature toggling. In both cases, the concept tends to be fundamentally limited to increases in functionality, leaving out aspects related to capacity, support or quality of service.
+
+With this state of the art, several advances are necessary to achieve the automatic adaptation of IS to changes in their pricings. Hence, the primary objective of this paper is to formalise pricings in order to establish a sound basis for automating the analysis and management of the variability they introduce in SaaS products.
 
 ## Structure
 
